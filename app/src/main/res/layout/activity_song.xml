@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        style="@style/CustomEditText"
+        android:hint="search for a song" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/image_margin_top"
+        android:scaleType="center"
+        android:src="@mipmap/image" />
+
+    <TextView
+        android:id="@+id/bandNameTextView"
+        style="@style/CustomtText"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/songNameTextView"
+        style="@style/CustomtText" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevButton"
+            style="@style/CustomButton"
+            android:background="@mipmap/pause"/>
+
+        <Button
+            android:id="@+id/stopButton"
+            style="@style/CustomButton"
+            android:background="@mipmap/play" />
+
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/CustomButton"
+            android:background="@mipmap/stop" />
+
+    </LinearLayout>
+
+</LinearLayout>

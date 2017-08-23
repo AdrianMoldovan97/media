@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="songName">song</string>
+    <string name="songNameActivity">songName</string>
+    <string name="media">media</string>
+    <string name="bandName">band</string>
+    <string name="bandNameActivity">bandName</string>
+    <string name="metallica">Metallica</string>
+    <string name="nirvana">Nirvana</string>
+    <string name="rhcp">Red Hot Chilli Peppers</string>
+    <string name="sad">Sad But True</string>
+    <string name="one">One</string>
+    <string name="unforgiven">The Unforgiven</string>
+    <string name="lithium">Lithium</string>
+    <string name="come">Come as you are</string>
+    <string name="the_man">The man who sold the world</string>
+    <string name="californication">Californication</string>
+    <string name="otherside">Otherside</string>
+    <string name="under_the_bridge">Under the bridge</string>
+    <string name="band_details">Here will be shwon information about the band</string>
+    <string name="song_details">Here will be shwon the lyrics of the song</string>
+
+
+</resources>
