@@ -23,29 +23,30 @@ public class SongActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         band = extras.getString(getStringFromResId(R.string.bandName));
         songTitle = extras.getString(getStringFromResId(R.string.songName));
-        mediaResourceId = extras.getInt(getStringFromResId(R.string.media));
 
         TextView bandNameTextView = (TextView) findViewById(R.id.bandNameTextView);
         bandNameTextView.setText(band);
-        bandNameTextView.setOnClickListener(new View.OnClickListener() {
+        TextView songNameTextView = (TextView) findViewById(R.id.songNameTextView);
+        songNameTextView.setText(songTitle);
+
+        Button bandDetailButton = (Button) findViewById(R.id.bandDeatilsButton);
+        bandDetailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SongActivity.this, BandDetailActivity.class);
-                intent.putExtra(getStringFromResId(R.string.bandNameActivity), band);
                 startActivity(intent);
             }
         });
 
-        TextView songNameTextView = (TextView) findViewById(R.id.songNameTextView);
-        songNameTextView.setText(songTitle);
-        songNameTextView.setOnClickListener(new View.OnClickListener() {
+        Button songDetailButton = (Button) findViewById(R.id.songDeatilsButton);
+        songDetailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SongActivity.this, SongDetailActivity.class);
-                intent.putExtra(getStringFromResId(R.string.songNameActivity), songTitle);
                 startActivity(intent);
             }
         });
+
     }
 
     private String getStringFromResId(int resId) {

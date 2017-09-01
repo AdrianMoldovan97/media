@@ -8,4 +8,11 @@
         style="@style/CustomtText"
         android:text="@string/band_details"/>
 
+    <Button
+        style="@style/CustomButton"
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_song"/>
+
 </LinearLayout>

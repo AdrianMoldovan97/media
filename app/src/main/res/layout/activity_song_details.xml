@@ -6,4 +6,13 @@
     <TextView
         style="@style/CustomtText"
         android:text="@string/song_details"/>
+
+    <Button
+        style="@style/CustomButton"
+        android:id="@+id/backSongButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_song"/>
+
+
 </LinearLayout>

@@ -5,10 +5,19 @@
     android:orientation="vertical"
     android:background="@color/colorBackground">
 
-    <EditText
-        android:id="@+id/searchEditText"
-        style="@style/CustomEditText"
-        android:hint="search for a song" />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/playing_now"
+        style="@style/CustomtText"
+        android:text="@string/song_playing_now"/>
+
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/infoPage"
+        style="@style/CustomtText"
+        android:text="@string/song_page_label"/>
+
 
     <ImageView
         android:layout_width="wrap_content"
@@ -18,15 +27,41 @@
         android:scaleType="center"
         android:src="@mipmap/image" />
 
-    <TextView
-        android:id="@+id/bandNameTextView"
-        style="@style/CustomtText"
-        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/bandNameTextView"
+            style="@style/CustomtText"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/bandDeatilsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"/>
 
-    <TextView
-        android:textStyle="italic"
-        android:id="@+id/songNameTextView"
-        style="@style/CustomtText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/songNameTextView"
+            android:textStyle="italic"
+            style="@style/CustomtText" />
+        <Button
+            android:id="@+id/songDeatilsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"/>
+
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_marginTop="@dimen/button_height"

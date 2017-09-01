@@ -7,16 +7,10 @@ package com.example.android.mediaplayer.Models;
 public class Song {
     private String title;
     private String band;
-    private int mediaResourceId;
 
-    public Song(String t, String b, int res) {
+    public Song(String t, String b) {
         title = t;
         band = b;
-        mediaResourceId = res;
-    }
-
-    public int getMediaResourceId() {
-        return mediaResourceId;
     }
 
     public String getBand() {

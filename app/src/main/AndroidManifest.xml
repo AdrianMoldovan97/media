@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo2"
-        android:label="@string/app_name"
+        android:label="@string/main_label"
         android:roundIcon="@mipmap/logo2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.SongActivity" />
+        <activity
+            android:name=".Activities.SongActivity"
+            android:label="@string/song_playing_label" />
         <activity
             android:name=".Activities.BandDetailActivity"
             android:label="Band Details"></activity>

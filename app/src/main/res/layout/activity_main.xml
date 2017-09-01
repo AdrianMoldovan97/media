@@ -7,7 +7,13 @@
     android:focusableInTouchMode="true"
     android:background="@color/colorBackground">
 
+    <TextView
+        android:id="@+id/infoPage"
+        style="@style/CustomtText"
+        android:text="@string/list_songs_details"/>
+
     <EditText
+        android:layout_below="@id/infoPage"
         style="@style/CustomEditText"
         android:hint="search for a song"
         android:id="@+id/searchSongEditText"

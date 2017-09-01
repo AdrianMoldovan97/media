@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">MediaPlayer</string>
+    <string name="main_label">Songs List</string>
+    <string name="song_playing_label">Play music</string>
+    <string name="song_playing_now">Playing now</string>
     <string name="songName">song</string>
     <string name="songNameActivity">songName</string>
     <string name="media">media</string>
@@ -17,8 +20,10 @@
     <string name="californication">Californication</string>
     <string name="otherside">Otherside</string>
     <string name="under_the_bridge">Under the bridge</string>
-    <string name="band_details">Here will be shwon information about the band</string>
-    <string name="song_details">Here will be shwon the lyrics of the song</string>
-
+    <string name="back_to_song">Back to the songs list</string>
+    <string name="band_details">Here will be shwon information about the band. The user can return to the song page.</string>
+    <string name="song_details">Here will be shwon the lyrics of the song.The user can return to the song page.</string>
+    <string name="list_songs_details">Here will be listed all the songs and also the bands. The user can search for a song with the search edit text.</string>
+    <string name="song_page_label">Here the user can view the song playing and also check details about the band and song.</string>
 
 </resources>
