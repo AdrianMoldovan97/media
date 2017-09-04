@@ -8,19 +8,18 @@
     <TextView
         android:id="@+id/playing_now"
         style="@style/CustomtText"
-        android:text="@string/song_details_label"
+        android:text="@string/song_payment_label"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
         style="@style/CustomtText"
-        android:text="@string/song_details" />
+        android:text="@string/song_payment" />
 
     <Button
-        android:id="@+id/backSongButton"
+        android:id="@+id/backButton"
         style="@style/CustomButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/back_to_song" />
-
 </LinearLayout>

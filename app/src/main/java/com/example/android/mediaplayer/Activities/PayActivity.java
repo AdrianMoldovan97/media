@@ -8,17 +8,17 @@ import android.widget.Button;
 
 import com.example.android.mediaplayer.R;
 
-public class BandDetailActivity extends AppCompatActivity {
+public class PayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_band_details);
+        setContentView(R.layout.payment_layout);
 
         Button backButton = (Button) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BandDetailActivity.this, MainActivity.class);
+                Intent intent = new Intent(PayActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

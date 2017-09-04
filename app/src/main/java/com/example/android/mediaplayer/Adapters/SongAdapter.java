@@ -23,10 +23,10 @@ public class SongAdapter extends ArrayAdapter<Song> {
                     R.layout.list_item, parent, false);
         }
         final Song currentSong = getItem(position);
-        TextView defaultLanguageTextView = (TextView) listItemView.findViewById(R.id.textView1);
-        defaultLanguageTextView.setText(currentSong.getTitle());
-        TextView miwokLanguageTextView = (TextView) listItemView.findViewById(R.id.textView2);
-        miwokLanguageTextView.setText(currentSong.getBand());
+        TextView songTextView = (TextView) listItemView.findViewById(R.id.songTextView);
+        songTextView.setText(currentSong.getTitle());
+        TextView bandTextView = (TextView) listItemView.findViewById(R.id.bandTextView);
+        bandTextView.setText(currentSong.getBand());
         return listItemView;
     }
 }

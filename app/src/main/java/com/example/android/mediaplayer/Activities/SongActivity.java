@@ -1,7 +1,6 @@
 package com.example.android.mediaplayer.Activities;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,7 +12,6 @@ import com.example.android.mediaplayer.R;
 public class SongActivity extends AppCompatActivity {
     String band;
     String songTitle;
-    int mediaResourceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +45,14 @@ public class SongActivity extends AppCompatActivity {
             }
         });
 
+        Button paymentNutton = (Button) findViewById(R.id.buySongButton);
+        paymentNutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SongActivity.this, PayActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private String getStringFromResId(int resId) {

@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:descendantFocusability="beforeDescendants"
-    android:focusableInTouchMode="true"
-    android:background="@color/colorBackground">
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/playing_now"
+        style="@style/CustomtText"
+        android:text="@string/song_list_label"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/infoPage"
         style="@style/CustomtText"
-        android:text="@string/list_songs_details"/>
+        android:layout_below="@+id/playing_now"
+        android:text="@string/list_songs_details" />
 
     <EditText
-        android:layout_below="@id/infoPage"
-        style="@style/CustomEditText"
-        android:hint="search for a song"
         android:id="@+id/searchSongEditText"
-        android:inputType="text"
-        />
+        style="@style/CustomEditText"
+        android:layout_below="@id/infoPage"
+        android:hint="search for a song"
+        android:inputType="text" />
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_below="@+id/searchSongEditText">
-    </ListView>
+        android:layout_below="@+id/searchSongEditText"
+        android:orientation="vertical"></ListView>
 
 </RelativeLayout>

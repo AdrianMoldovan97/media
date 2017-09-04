@@ -17,13 +17,12 @@
         android:layout_margin="@dimen/text_padding"
         android:layout_weight="1"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/bandTextView"
+            style="@style/CustomTextBand" />
 
         <TextView
-            android:id="@+id/textView2"
-            style="@style/CustomTextBand" />
-        <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/songTextView"
             style="@style/CustomTextSong" />
     </LinearLayout>
-
 </LinearLayout>

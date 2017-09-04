@@ -1,9 +1,6 @@
 package com.example.android.mediaplayer.Activities;
 
-import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(getStringFromResId(R.string.bandName), song.getBand());
                 intent.putExtra(getStringFromResId(R.string.songName), song.getTitle());
                 startActivity(intent);
-
             }
         });
     }
